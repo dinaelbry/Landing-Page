@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <!--   NAV   -->
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="logo-dot"></span>OMG AI</a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#" class="btn btn-ghost">Sign in</a>
+      <a href="#" class="btn btn-primary">Get started →</a>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+ <nav class="mobile-nav " id="mobileNav">
+  <a href="#features" onclick="closeMobileNav()">Features</a>
+  <a href="#how" onclick="closeMobileNav()">How it works</a>
+  <a href="#testimonials" onclick="closeMobileNav()">Reviews</a>
+  <a href="#pricing" onclick="closeMobileNav()">Pricing</a>
+  <a href="#" class="btn btn-primary btn-large">Get started →</a>
+</nav> 
+
+<!--   HERO   -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="grid-lines"></div>
+  <div class="hero-content">
+    <div class="float-badge"><span class="pulse"></span> Now with GPT-5 powered insights</div>
+    <div class="tag"><i class="fa-solid fa-rocket"></i> Launching v3.0 — Smarter than ever</div>
+    <h1>Think Faster.<br/><em>Ship Smarter.</em></h1>
+    <p>OMG AI turns raw ideas into production-ready code, automated workflows, and intelligent insights — all from a single dashboard.</p>
+    <div class="hero-ctas">
+      <a href="#pricing" class="btn btn-primary btn-large">Start for free →</a>
+      <a href="#how" class="btn btn-ghost btn-large">▶ Watch demo</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">48<span>k+</span></div>
+      <div class="stat-label">Teams using Nexus</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3.2<span>M</span></div>
+      <div class="stat-label">Tasks automated</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">99.9<span>%</span></div>
+      <div class="stat-label">Uptime SLA</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4.9<span><i class="fa-solid fa-star"></i></span></div>
+      <div class="stat-label">Average rating</div>
+    </div>
+  </div>
+</section>
+
+<!--   FEATURES   -->
+<section class="features" id="features">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="tag"><i class="fa-solid fa-bolt"></i> Capabilities</div>
+      <h2>Everything you need to move faster</h2>
+      <p>From code generation to smart automations, OMG AI is the all-in-one platform your team actually loves.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-blue"><i class="fa-solid fa-brain"></i></div>
+        <h3>AI Code Generation</h3>
+        <p>Describe your feature in plain English. OMG writes clean, tested, production-ready code in seconds — across any language or framework.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-teal"><i class="fa-solid fa-gears"></i></div>
+        <h3>Smart Automations</h3>
+        <p>Build multi-step workflows with a visual drag-and-drop builder. Connect 200+ apps and trigger actions based on AI-detected events.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-pink"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Real-time Analytics</h3>
+        <p>Live dashboards that surface what matters. Identify bottlenecks, track velocity, and forecast sprints with predictive AI models.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-gold"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Enterprise Security</h3>
+        <p>SOC 2 Type II certified. SSO, RBAC, audit logs, and end-to-end encryption keep your IP safe without slowing you down.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-purple"><i class="fa-solid fa-users"></i></div>
+        <h3>Team Collaboration</h3>
+        <p>Real-time multiplayer editing, inline comments, and AI-suggested code reviews keep the whole team in sync, always.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon fi-green"><i class="fa-solid fa-earth-americas"></i></div>
+        <h3>Global Edge Network</h3>
+        <p>Deploy to 40+ regions in one click. Sub-50ms response times, zero cold starts, and auto-scaling to millions of users.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   HOW IT WORKS   -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="tag"><i class="fa-solid fa-map"></i> Process</div>
+      <h2>Ship a feature in 4 steps</h2>
+      <p>From idea to production in minutes, not weeks. No DevOps PhD required.</p>
+    </div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-num">01</div>
+        <h3>Describe your idea</h3>
+        <p>Type your feature request in plain language. OMG understands context, intent, and constraints automatically.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">02</div>
+        <h3>Review AI draft</h3>
+        <p>OMG generates a complete implementation plan, code, and tests. Review inline, iterate with a single prompt.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">03</div>
+        <h3>One-click deploy</h3>
+        <p>Push to staging or production with automatic CI/CD pipelines, rollback safety, and performance monitoring.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">04</div>
+        <h3>Monitor & improve</h3>
+        <p>AI continuously analyzes usage patterns and suggests optimizations, bug fixes, and UX improvements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   TESTIMONIALS   -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="tag"><i class="fa-solid fa-comments"></i> Testimonials</div>
+      <h2>Loved by builders worldwide</h2>
+      <p>Thousands of engineering teams rely on OMG to ship faster, stay aligned, and focus on what matters.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"OMG cut our sprint time by 60%. The AI code review catches edge cases our team would miss at 2am. It's become our secret weapon."</blockquote>
+        <div class="test-author">
+          <div class="avatar av1">SR</div>
+          <div class="author-info">
+            <div class="name">Sarah Rahman</div>
+            <div class="role">VP Engineering · Stripe</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"We went from idea to beta in 3 days. OMG handled backend scaffolding, DB migrations, and CI setup — we just wrote the business logic."</blockquote>
+        <div class="test-author">
+          <div class="avatar av2">MC</div>
+          <div class="author-info">
+            <div class="name">Marcus Chen</div>
+            <div class="role">CTO & Co-founder · Draft</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"The automation builder is genuinely magic. We automated our entire onboarding flow without writing a single line of integration code."</blockquote>
+        <div class="test-author">
+          <div class="avatar av3">PK</div>
+          <div class="author-info">
+            <div class="name">Priya Kumar</div>
+            <div class="role">Head of Product · Notion</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"I was skeptical about AI tools, but OMG earned its place in our stack. The analytics alone save us 5 hours of reporting every week."</blockquote>
+        <div class="test-author">
+          <div class="avatar av4">JO</div>
+          <div class="author-info">
+            <div class="name">James O'Brien</div>
+            <div class="role">Lead Developer · Shopify</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"Security was our biggest concern. Nexus's SOC 2 certification and zero-trust architecture made our security team very happy."</blockquote>
+        <div class="test-author">
+          <div class="avatar av5">LT</div>
+          <div class="author-info">
+            <div class="name">Leila Torres</div>
+            <div class="role">CISO · Revolut</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card fade-up">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote>"Our junior devs now ship like seniors. The AI mentoring mode explains every suggestion in context — it's like a senior engineer reviewing in real time."</blockquote>
+        <div class="test-author">
+          <div class="avatar av6">AM</div>
+          <div class="author-info">
+            <div class="name">Alex Morel</div>
+            <div class="role">Engineering Manager · Linear</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   PRICING   -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <div class="tag"><i class="fa-solid fa-credit-card"></i> Pricing</div>
+      <h2>Simple, transparent pricing</h2>
+      <p>Start free, scale as you grow. No hidden fees, no surprise invoices — ever.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="price-card fade-up">
+        <div class="price-name">Starter</div>
+        <div class="price-desc">Perfect for solo developers and small side projects.</div>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">0</span>
+          <span class="price-mo">/mo</span>
+        </div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-circle-check check"></i> Up to 3 projects</li>
+          <li><i class="fa-solid fa-circle-check check"></i> 500 AI generations/mo</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Basic automations</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Community support</li>
+          <li><i class="fa-solid fa-circle-xmark cross"></i> Team collaboration</li>
+          <li><i class="fa-solid fa-circle-xmark cross"></i> Advanced analytics</li>
+          <li><i class="fa-solid fa-circle-xmark cross"></i> Custom integrations</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-large">Get started free</a>
+      </div>
+      <!-- Pro (popular) -->
+      <div class="price-card popular fade-up">
+        <div class="popular-badge">MOST POPULAR</div>
+        <div class="price-name">Pro</div>
+        <div class="price-desc">For growing teams who need speed without limits.</div>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">49</span>
+          <span class="price-mo">/mo</span>
+        </div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-circle-check check"></i> Unlimited projects</li>
+          <li><i class="fa-solid fa-circle-check check"></i> 10,000 AI generations/mo</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Advanced automations</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Priority support</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Team collaboration (up to 10)</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Full analytics suite</li>
+          <li><i class="fa-solid fa-circle-xmark cross"></i> Custom integrations</li>
+        </ul>
+        <a href="#" class="btn btn-filled btn-large">Start Pro trial →</a>
+      </div>
+      <!-- Enterprise -->
+      <div class="price-card fade-up">
+        <div class="price-name">Enterprise</div>
+        <div class="price-desc">Custom plans for large orgs with compliance needs.</div>
+        <div class="price-amount">
+          <span class="price-dollar"></span>
+          <span class="price-num" style="font-size:2rem">Custom</span>
+        </div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-circle-check check"></i> Unlimited everything</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Unlimited AI generations</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Custom automations</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Dedicated SLA + support</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Unlimited team seats</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Custom analytics & reports</li>
+          <li><i class="fa-solid fa-circle-check check"></i> Custom integrations & SSO</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-large">Contact sales →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   CTA SECTION   -->
+<section class="cta-section">
+  <div class="section-inner">
+    <div class="cta-box fade-up">
+      <h2>Ready to build the future?</h2>
+      <p>Join 48,000+ engineering teams who ship faster, smarter, and with less stress. Start free — no credit card required.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-large">Start building free →</a>
+        <a href="#" class="btn btn-clear btn-large">Book a demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   FOOTER   -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-dot"></span>OMG AI</a>
+        <p>The AI-powered platform for modern engineering teams. Think faster, ship smarter.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press kit</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Cookie policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span> &copy;2025 OMG AI Inc. All rights reserved.</span>
+        <span class="dev-credit">Developed with <i class="fa-solid fa-heart" style="color:var(--accent3);font-size:.75rem;"></i> by <strong>ENG. Dina Elbry</strong></span>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dina-elbry-ba9300266/" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/dinaelbry" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://Youtube.com" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
